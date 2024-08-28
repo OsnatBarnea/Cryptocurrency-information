@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
+    <script defer type="module" src="links.js"></script>
+    <script defer type="module" src="notyf.js"></script>
+    <script defer type="module" src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.svg">
+    <title>Cryptocurrency - home</title>
+</head>
+
+<body>
+    <div class="gridDiv">
+
+        <header class="indexHeader">
+            <h1>Cryptocurrency information</h1>
+        </header>
+
+        <div class="secondRowDiv">
+
+            <nav>
+                <span id="coinsSpan"></span>
+                <span id="reportsSpan"></span>
+                <span id="aboutSpan"></span>
+            </nav>
+
+            <div class="userInputDiv">
+                <label>search for coins:</label>
+                <form autocomplete="off" class="inputDiv">
+                    <input type="text" id="textBox">
+                </form>
+
+                <span id="searchSpan"></span>
+
+                <button type="button" id="submitSearchButton">
+                    submit
+                </button>
+
+                <button type="button" id="clearSearchButton">
+                    clear selection
+                </button>
+            </div>
+        </div>
+
+        <div id="progressBar">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+
+        <div id="container"></div>
+        <div id="searchSectionDiv">
+            <span id="searchSection"></span>
+        </div>
+
+        <div id="modalPopUpDiv"></div>
+    </div>
+</body>
+
+</html>
