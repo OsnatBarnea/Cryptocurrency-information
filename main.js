@@ -63,7 +63,7 @@ async function displayCoin(coins) {
             let html = `<div class="cardDiv">
                                 <div class="coinSymbolNameDiv">
                                     ${coins[i].symbol}
-                                    <img class="toggleImage" id="${i}" type="button" src="../assets/images/toggleCoin.svg" alt="toggle button">
+                                    <img class="toggleImage" id="${i}" type="button" src="/assets/images/toggleCoin.svg" alt="toggle button">
                                 </div>
 
                                 <div class="coinNameDiv">
@@ -339,7 +339,7 @@ function displayChosenCoins(fiveChoices) {
     const modalPopUpDiv = document.getElementById("modalPopUpDiv");
 
     let html = `<div class="modalDiv">
-                    <img src="../assets/images/xButton.svg" type="button" onclick="closeModalByX()" id="xButton">
+                    <img src="/assets/images/xButton.svg" type="button" onclick="closeModalByX()" id="xButton">
                     <h3>Choose up to five coins:</h3>`;
 
     for (let i = 0; i < fiveChoices.length; i++) {
